@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+    <title>qtest data query</title>
+    <style>
+        html {
+            background-image: url('./images/qtest_data_query_logo2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+        /* div.header {
+            height: 100px;
+            text-align: center;
+            color: white;
+            border-style: solid;
+            border-color: rgb(0, 255, 255);
+            border-width: 5px;
+            background-repeat: no-repeat;
+            background-color: rgb(75, 107, 140);
+
+        } */
+
+        h2#header {
+            padding-top: 1%;
+        }
+
+        div#loginForm {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgba(59, 97, 135, 0.685);
+            height: 200px;
+            width: 300px;
+            padding: 0%;
+            margin-left: 38%;
+            margin-top: 31%;
+            display: flexbox;
+        }
+
+        label.auth {
+            font-size: x-large;
+            color:  white;
+            font-stretch: expanded;
+
+
+
+        }
+
+        input.auth {
+            font-size: larger;
+            box-sizing: border-box;
+            border-width: 3px;
+            width: 300px;
+            height: 30px;
+            color:  white;
+
+
+        }
+
+        button {
+            background-color: rgb(7, 91, 161);
+            color: white;
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        export const test = function name(params) {
+            return window.alert("this from function");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <div class="header">
+        <form>
+            <h2 id="header">Qtest Authentication</h2>
+    </div> -->
+    <div id="loginForm">
+        <label class="auth">Username</label>
+        <br>
+        <input type="text" id="loginInput" class="auth" required>
+        <br><br>
+        <label class="auth">Password</label>
+        <br>
+        <input type="password" name="password" id="passwordInput" class="auth" required>
+        <br><br>
+        <button type="submit" id="loginBtn" class="auth" onclick=test>Login</button>
+        </form>
+    </div>
+</body>
+
+</html>

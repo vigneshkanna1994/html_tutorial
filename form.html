@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>form practice page</title>
+    <style>
+        * {
+            padding: 5px;
+            text-align: justify;
+            background-color: white;
+        }
+        label {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input {
+            box-sizing: border-box;
+            border-width: 2px;
+        }
+        h2 {
+            text-align: center;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>Personal Details</h2>
+        <br><br>
+        <label>Full name: </label>
+        <input type="text">
+        <br><br>
+        <label>Password: </label>
+        <input type="password">
+        <br><br>
+        <label>Gender: </label>
+        <input type="radio" name="gender">
+        <label>Male</label>
+        <input type="radio" name="gender">
+        <label>Female</label>
+        <br><br>
+        <label>Skills: </label>
+        <br>
+        <input type="checkbox"><label>html</label><br>
+        <input type="checkbox"><label>css</label><br>
+        <input type="checkbox"><label>js<label><br>
+        <input type="checkbox"><label>nodejs<label>
+                        <br><br>
+                        <label>Select Color: </label>
+                        <input type="color" value="">
+                        <br><br>
+                        <label>DOB: </label>
+                        <input type="date">
+                        <br><br>
+                        <label for="">Select Degree: </label>
+                        <br>
+                        <select name="degree" id="degree">
+                            <option value="select">select</option>
+                            <option value="diplomo">diplomo</option>
+                            <option value="UG">UG</option>
+                            <option value="PG">PG</option>
+                        </select>
+                        <br><br>
+                        <label for="">Upload Resume: </label>
+                        <input type="file">
+                        <br><br>
+                        <button type="submit" onclick="window.alert ('successfully submitted the application')">submit</button>
+                        <br>
+    </form>
+</body>
+
+</html>
